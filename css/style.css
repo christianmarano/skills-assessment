@@ -1,0 +1,135 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 12px;
+}
+
+.container{
+    max-width: 375px;
+    margin: 0 auto;
+    background: #141414;
+    border-radius: 25px;
+    box-shadow: 10px 10px 20px #A0A0A0;
+}
+
+.header{
+    display: flex;
+    height: 75px;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(0deg, rgba(36,36,36,1) 0%, rgba(66,66,66,1) 100%);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+h2 {
+  margin: 25px;
+  font-size: 20px;
+}
+
+.column{
+    width: 50%;
+}
+
+.contact-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5em;
+}
+
+.contact-section:hover{
+  background-color: #48494a;
+}
+
+.contact-name{
+    color: #fff;
+    font-size: 1.2em;
+    padding-left: 15px;
+}
+
+.contact-email{
+    color:#636363;
+    font-size: 1.2em;
+    padding-left: 15px;
+}
+
+.contact-phone{
+    color:#636363;
+    font-size: 1.2em;
+    padding-left: 15px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: block;
+  float: left;
+  margin: 5px 20px 2px 10px;
+}
+
+hr{
+    border: 1px solid #292929;
+}
+
+.footer{
+  display: flex;
+  height: 75px;
+  justify-content: space-evenly;
+  color: #fff;
+  background: linear-gradient(0deg, rgba(66,66,66,1) 0%, rgba(36,36,36,1) 100%);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  }
+
+.menubtn {
+  background: #fff;
+  color: black;
+  padding: 10px;
+  float: right;
+  font-size: 12px;
+  min-width: 120px;
+  border: none;
+}
+
+.menu {
+  position: relative;
+  left: 128px;
+  top: 20px;
+  display: inline-block;
+  width: 120px;
+  height: 34px;
+}
+
+.menu-content {
+  display: none;
+  position: absolute;
+  bottom: 34px;
+  background-color: #f1f1f1;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.menu-content a {
+  color: black;
+  font-size: 12px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+.menu-content a:hover {background-color: #CECECE}
+
+.menu:hover .menu-content {
+  display: block;
+}
+
+.menu:hover .menubtn {
+  background-color: #0A84FF;
+}
