@@ -7,88 +7,101 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Contact List</title>
 </head>
-
-    <body>
+<body>
     
-        <div class="container">
+    <main class="container">
         
-            <header class="header">
-                <h2>Contacts</h2>
-            </header>
+        <header class="header">
+            <h2>Contacts</h2>
+        </header>
 
-                <section class="contacts-library">
+        <div class="contacts-library">
                 
-                    <div class="contact-section row">
-                        <p class="contact-name column popover-title"><span class="dot" ></span>Christian</p>
-                        <p class="contact-email column popover-title">christian@yahoo.com</p>
-                    </div>
+                <div class="contact-section toggle row">
+                        <p class="contact-name column"><span class="dot-active"></span>Christian</p>
+                        <p class="contact-email column">christian@yahoo.com</p>
+                        <p class="contact-phone column">323-555-1234</p>
+                        <span class="contact-info">
+                            <a href="mailto:christian@yahoo.com">christian@yahoo.com</a>
+                            <p>323-555-1234</p>
+                            <p>6539 Witon Ave.</p>
+                            <p>Culver City CA 90234</p>
+                        </span>
+                </div>
 
-                    <hr>
+                <hr>
                 
-                    <div class="contact-section row">
-                        <p class="contact-name column"><span class="dot"></span>Rich</p>
+                <div class="contact-section row">
+                        <p class="contact-name column"><span class="dot-active"></span>Rich</p>
                         <p class="contact-email column">rich@tripod.com</p>
-                    </div>
+                        <p class="contact-phone column">323-555-1234</p>
+                </div>
 
-                    <hr>
+                <hr>
 
-                    <div class="contact-section row">
-                        <p class="contact-name column"><span class="dot"></span>Scott</p>
+                <div class="contact-section row">
+                        <p class="contact-name column"><span class="dot-active"></span>Scott</p>
                         <p class="contact-email column">scott@mailinator.com</p>
-                    </div>
+                        <p class="contact-phone column">323-555-1234</p>
+                </div>
 
-                    <hr>
+                <hr>
 
-                    <div class="contact-section row">
-                        <p class="contact-name column"><span class="dot"></span>Danny</p>
+                <div class="contact-section row">
+                        <p class="contact-name column"><span class="dot-active"></span>Danny</p>
                         <p class="contact-email column">danny@hotmail.com</p>
-                    </div>
+                        <p class="contact-phone column">323-555-1234</p>
+                </div>
 
-                    <hr>
+                <hr>
 
-                    <div class="contact-section row">
-                        <p class="contact-name column"><span class="dot"></span>Taka</p>
+                <div class="contact-section row">
+                        <p class="contact-name column"><span class="dot-offline"></span>Taka</p>
                         <p class="contact-email column">taka@myspace.com</p>
-                    </div>
+                        <p class="contact-phone column">323-555-1234</p>
+                        
+                </div>
 
-                    <hr>
+                <hr>
                 
-                    <div class="contact-section row">
-                        <p class="contact-name column"><span class="dot"></span>Tim</p>
+                <div class="contact-section row">
+                        <p class="contact-name column"><span class="dot-away"></span>Tim</p>
                         <p class="contact-email column">tim@netscape.com</p>
-                    </div>
+                        <p class="contact-phone column">323-555-1234</p>
+                </div>
 
-                    <hr>
+                <hr>
 
-                    <div class="contact-section row">
-                        <p class="contact-name column"><span class="dot"></span>Patrick</p>
+                <div class="contact-section row">
+                        <p class="contact-name column"><span class="dot-active"></span>Patrick</p>
                         <p class="contact-email column">patrick@live.com</p>
-                    </div>
+                        <p class="contact-phone column">323-555-1234</p>
+                </div>
 
-                    <hr>
+                <hr>
 
-                    <div class="contact-section row">
-                        <p class="contact-name column"><span class="dot"></span>Jacques</p>
+                <div class="contact-section row">
+                        <p class="contact-name column"><span class="dot-away"></span>Jacques</p>
                         <p class="contact-email column">jacques@aol.com</p>
+                        <p class="contact-phone column">323-555-1234</p>
+                </div>
+        </div>
+                
+                
+                <footer>
+                    <div class=footer>
+                        <select id="contact-select" onchange="switchContactType()">
+                            <option value="email-option">Email Address</option>
+                            <option value="phone-option">Phone Number</option>
+                        </select>
                     </div>
+                </footer>
 
-                    <footer>
-                        <div class="footer">
-                            <div class="menu">
-                                <button class="menubtn">Email address</button>
-                            <div class="menu-content">
-                                <a href="contact.html">Phone number</button>
-                            </div>
-                            </div>
-                        </div>
-                    </footer>
-
-                 </section>
-        
         </div>
         
-        <script src="js/scipt.js"></script>
-    
-    </body>
+    </main>
 
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
 </html>
